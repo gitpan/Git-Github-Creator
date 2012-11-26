@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Git-Github-Creator
-version:            0.17
+version:            0.17_02
 abstract:           Create a Github repository for your Perl module
 author:
     - brian d foy <bdfoy@cpan.org>
@@ -8,19 +8,23 @@ license:            perl
 distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
 requires:
     Config::IniFiles:     0
     File::Find::Closures:  0
     Log::Log4perl:        0
+    Net::GitHub:          0.48
     Test::More:           0
     Test::Output:         0
-    WWW::Mechanize:       0
     YAML:                 0
+resources:
+    Repository:  http://github.com/briandfoy/github_creator
 no_index:
     directory:
         - t
         - inc
-generated_by:       ExtUtils::MakeMaker version 6.48
+generated_by:       ExtUtils::MakeMaker version 6.55_02
 meta-spec:
     url:      http://module-build.sourceforge.net/META-spec-v1.4.html
     version:  1.4
